@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="calc.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <style>
+      .calc {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+      #op {
+        display: flex;
+        flex-direction: column;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        border: 5px solid #212121;
+      }
+      button {
+        width: 75px;
+        height: 75px;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .res {
+        display: flex;
+        flex-direction: column;
+        border: 5px #212121;
+        border-style: solid solid none solid;
+        width: calc(75px * 4);
+        height: 50px;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <div class="res">
+      <p id="res">0</p>
+      <p id="current"></p>
+    </div>
+    <div id="container" class="container">
+      <div id="calc" class="calc">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>c</button>
+        <button>0</button>
+        <button>=</button>
+      </div>
+      <div id="op">
+        <button>-</button>
+        <button>+</button>
+        <button>*</button>
+        <button>/</button>
+      </div>
+    </div>
+  </body>
+</html>
