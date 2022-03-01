@@ -1,0 +1,35 @@
+.calc {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  #op {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    border: 5px solid #212121;
+  }
+  button {
+    width: 75px;
+    height: 75px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .res {
+    display: flex;
+    flex-direction: column;
+    border: 5px #212121;
+    border-style: solid solid none solid;
+    width: calc(75px * 4);
+    height: 50px;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
