@@ -1,7 +1,8 @@
+//Variables
 let curr = null,
   pred = 0,
   currOp = "";
-
+//Methods
 let DoOp = (op) => {
   currOp = op;
   switch (op) {
@@ -43,7 +44,7 @@ let DoOp = (op) => {
       break;
   }
 };
-
+//Event Handlers
 const OpCont = document.getElementById("op");
 OpCont.childNodes.forEach((child) => {
   child.addEventListener("click", () => {
